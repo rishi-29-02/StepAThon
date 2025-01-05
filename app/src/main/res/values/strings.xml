@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Step_a_thon</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lets_go">Let\'s Go</string>
+    <string name="step_up">Step Up and Score</string>
+    <string name="claim">Claim the Throne</string>
+    <string name="score_big">Score Big!!</string>
+</resources>

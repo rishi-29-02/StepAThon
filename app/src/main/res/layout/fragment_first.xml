@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivNext"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:src="@drawable/group_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivShine"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:visibility="gone"
+            android:src="@drawable/bg_for_top_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivNext" />
+
+        <ImageView
+            android:id="@+id/ivCurrent"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:src="@drawable/group_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivNext" />
+
+        <ImageView
+            android:id="@+id/ivStars1"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_margin="10dp"
+            android:rotation="-15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivCurrent" />
+
+        <ImageView
+            android:id="@+id/ivStars2"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_margin="10dp"
+            android:rotation="-15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvHeader" />
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Step Up and Score"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivCurrent" />
+
+        <TextView
+            android:id="@+id/tvSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat"
+            android:text="Join the Race, Lace Up, and \n Embrace Health!"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
